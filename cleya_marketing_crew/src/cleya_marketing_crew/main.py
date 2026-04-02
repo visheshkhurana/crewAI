@@ -36,29 +36,32 @@ def run():
 
     inputs = {
         # ── Target Configuration ─────────────────────────────────────
-        "target_segment": "founders raising pre-seed to Series A in India",
+        "target_segment": "all professionals — founders, investors, VCs, operators, engineers, designers, marketers, recruiters, and talent across India's startup and business ecosystem",
         
         # ── Time Period ──────────────────────────────────────────────
         "time_period": "April 2026",
         
         # ── Product Context (available to all agents) ────────────────
         "product_name": "Cleya.ai",
-        "product_tagline": "AI Superconnector for Indian Startups",
+        "product_tagline": "AI Superconnector for Professionals in India",
         "product_url": "https://cleya.ai",
         "social_handle": "@joincleya",
         "product_description": (
-            "Cleya.ai is an AI-powered networking platform that matches founders, "
-            "investors, and talent across India's startup ecosystem. Members describe "
-            "their goals in plain language, and Cleya's AI finds matches based on "
-            "sector fit, stage, check size, and intent — delivering warm introductions "
-            "with context. No cold emails. No awkward LinkedIn DMs."
+            "Cleya.ai is an AI-powered professional networking platform that matches "
+            "all kinds of professionals across India — founders, investors, operators, "
+            "engineers, designers, marketers, recruiters, freelancers, and anyone building "
+            "or scaling companies. Members describe their goals in plain language, and "
+            "Cleya's AI finds matches based on skills, intent, industry, role fit, and "
+            "professional context — delivering warm introductions with context. "
+            "No cold emails. No awkward LinkedIn DMs."
         ),
         "key_differentiators": (
-            "1) AI matching with 90%+ accuracy scores, "
+            "1) AI matching with 90%+ accuracy scores across all professional roles, "
             "2) Warm intros with context (not cold outreach), "
             "3) Members-only verified community, "
-            "4) Covers founders + investors + talent (all sides of the table), "
-            "5) India-focused with Tier-2 city coverage"
+            "4) Covers ALL professionals — not just founders and investors, "
+            "5) India-focused with Tier-2 city coverage, "
+            "6) Works for hiring, partnerships, mentorship, co-founding, and deal flow"
         ),
     }
 
@@ -94,7 +97,7 @@ def train():
     Usage: crewai train -n <iterations>
     """
     inputs = {
-        "target_segment": "founders raising pre-seed to Series A in India",
+        "target_segment": "all professionals across India's ecosystem",
         "time_period": "April 2026",
     }
 
@@ -127,7 +130,7 @@ def test():
     Usage: crewai test -n <iterations>
     """
     inputs = {
-        "target_segment": "founders raising pre-seed to Series A in India",
+        "target_segment": "all professionals across India's ecosystem",
         "time_period": "April 2026",
     }
 
