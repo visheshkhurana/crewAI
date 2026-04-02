@@ -1,0 +1,24 @@
+[project]
+name = "cleya-marketing-crew"
+version = "0.1.0"
+description = "Multi-agent growth & viral marketing system for Cleya.ai — powered by crewAI"
+authors = [
+    { name = "Vishesh Khurana" }
+]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.108.0",
+]
+
+[project.scripts]
+cleya-marketing-crew = "cleya_marketing_crew.main:run"
+train = "cleya_marketing_crew.main:train"
+replay = "cleya_marketing_crew.main:replay"
+test-crew = "cleya_marketing_crew.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cleya_marketing_crew"]
